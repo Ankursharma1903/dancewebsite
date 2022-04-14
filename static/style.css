@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Redressed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin:0px 14px ;
+    font-size: 28px;
+    margin-right: 40px;
+}
+#logo img{
+    height: 42px;
+    filter: invert(1);
+
+}
+#navbar{
+    background-color: #0310028a;
+    padding: 18px 14px;
+    font-family: 'Dancing Script', cursive;
+}
+#navbar ul{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; *//*this will make the things go on the left*/
+  align-items: center;/*this will vertically center this */
+
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 13px 20px;
+    color: white;
+}
+#navbar li a:hover{
+    color: cyan;
+}
+#introSection{
+    padding-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/static/bg.jpg") center center/cover no-repeat;
+     /* height: 300px;   */
+     height: 500px;
+     /* background-color: yellow; */
+     font-family: 'Redressed', cursive;
+     font-size: 45px;
+}
+#introSection div .small{
+    font-size: 30px;
+    padding: 5px;
+}
+
+#missionSection{
+    height: 326px;
+    width:67%;
+    margin: auto;
+}
+#missionSection h2{
+    font-size: 32px;
+        text-align: center;
+        padding-top: 12px;
+        font-family: 'Redressed', cursive;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 28%;
+    height: 210px;
+    margin: 23px 20px;
+    display: inline-block
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+  height: 130px;
+  padding: 0px 14px;
+  margin: 5px 0px;
+  /* margin: 5px 9px; */
+}
+.card-img img{
+  height: inherit;/*it will takes the same height as of card-img*/
+}
+.card-content{
+  justify-content: center;
+  /* padding: 0 10px; */
+  
+}
+.card-content p{
+  font-size: 16px;
+}
+#sponsorSection{
+        height: 300px;
+        background-color: #90caf9;
+}
+#sponsorSection h2{
+        text-align: center;
+        padding-top: 12px;
+        font-family: 'Redressed', cursive;
+}
+#sponsors{
+    height: 153px;
+    max-width: 1000px;
+    margin:35px auto;
+
+}
+.spimage{
+    height: 80%;
+    margin: 20px;
+}
+#footer{
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}

@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title Ankur's Dance Academy
+    style
+      include ../static/style.css
+  body 
+    nav#navbar
+        ul 
+            div#logo 
+                img(src="/static/img/logo.png", alt="logo")
+                | ADA
+            li #[a(href='/') Home ]
+            li #[a(href='/') About] 
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info]
+            li #[a(href='/') Contact us]
+    section#introSection
+        div Welcome to Ankur's Dance Academy
+        div.small Eat Dance Sleep Repeat
+    section#missionSection
+        h2 Our mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="static/img/ease.jpg", alt="image")
+                div.card-content    
+                    p Dance gives your mind Peace
+        div.card
+            h3 Dance the way you like 
+            div.card-box
+                div.card-img
+                    img(src="static/img/freedom.jpg", alt="image")
+                div.card-content    
+                    p We teach all types of dance
+        div.card
+            h3 Expert faculty 
+            div.card-box
+                div.card-img
+                    img(src="static/img/ballet.jpg", alt="image")
+                div.card-content    
+                    p Ballet dance facility also available
+    section#sponsorSection
+        h2 Our sponsor
+        div#sponsors
+            img(src="/static/img/google.png", alt="sponsor image" Class="spimage")
+            img(src="/static/img/apple.png", alt="sponsor image" Class="spimage")
+            img(src="/static/img/microsoft2.jpg", alt="sponsor image" Class="spimage")
+            img(src="/static/img/icons.png", alt="sponsor image" Class="spimage")
+
+    footer#footer 
+        | copyright &copy 2022 AnkurDanceAcademy.com | All rights  reserved
+        //- i m using this & feature for sign or we can directly paste the sign over here
+    script 
+        include ../static/index.js

@@ -1,0 +1,24 @@
+//- layout.pug
+//- we use this template in other files also
+doctype html 
+html
+  head
+    title Ankur Dance Academy
+    block scripts
+    block style 
+  body
+    nav#navbar
+        ul 
+            div#logo 
+                img(src="/static/img/logo.png", alt="logo")
+                | ADA
+            li #[a(href='/') Home ]
+            li #[a(href='/') About] 
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info]
+            li #[a(href='/contact') Contact us]
+    //- this means we can add content here and same meaning for other blocks
+    //- now this navbar comes in all the templates so we remove it from other templates
+    block content   
+    footer#footer 
+        | copyright &copy 2022 AnkurDanceAcademy.com | All rights  reserved
